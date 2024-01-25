@@ -568,7 +568,7 @@ label{
   height: 4px;
   position: absolute;
   color: white;
-  border: 2px outset rgb(186, 145, 198);
+  border: 2px outset whitesmoke;
   animation: titleAnimation 2.5s ease-in-out;
   animation-delay: 0s;
 }
