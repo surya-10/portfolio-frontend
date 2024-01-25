@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import mylogo from "./logo3.png";
+import Typewriter from "typewriter-effect";
 
 function Base({name, title, children}){
     let [show, setShow] = useState(false);
@@ -27,7 +28,13 @@ function Base({name, title, children}){
                 <div className="main-div">
                     <div className="cont d-flex justify-content-between p-3 pb-4 align-items-center">
                         {/* <p className="text-white title display-6">SURYA</p> */}
-                        <img src={mylogo} className="logo"/>
+                        {/* <img src={mylogo} className="my-logo"/> */}
+                        <p className="my-logo mt-4"><span>S</span><span>u</span><span>r</span>
+                        <span>y</span>
+                        <span>a</span>
+                        <hr id="hr3"/>
+                        </p>
+                        
                         <i class="fa-solid fa-bars bar" onClick={hideNav}>
                             <div className="navv nav-bar1">
                                 <button className="btn text-dark nav-btn" onClick={()=>navigate("/")}>Home</button>

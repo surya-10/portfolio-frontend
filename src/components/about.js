@@ -24,7 +24,7 @@ function About() {
     })
 
     async function sendMail(obj){
-        let result = await fetch("https://portfolio-6yjn.onrender.com/get-data", {
+        let result = await fetch("http://localhost:8000/get-data", {
             method:"POST",
             body:JSON.stringify(obj),
             headers:{
