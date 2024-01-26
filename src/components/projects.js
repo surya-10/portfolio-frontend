@@ -95,7 +95,7 @@ function Projects() {
                             </div>
                             
                         </div>
-                        <div className="d-flex flex-column ms-2">
+                        <div className="d-flex flex-column ms-2 flex-wrap">
                                 <p className="h4 p-2">Diet Suggestion App</p>
                                 <p className="proj-des">Welcome to your personalized food companion! With our app, you can calculate your BMI by providing simple details like height, weight, and age. Once your BMI is determined, we offer tailored food suggestions, empowering you to make informed and healthy dietary choices aligned with your specific health and fitness goals.</p>
                                 <div className="d-flex flex-column">
