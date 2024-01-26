@@ -13,10 +13,10 @@ function Base({name, title, children}){
         if(nav.className=="navv nav-bar1"){
             nav.classList.add("nav-bar");
             nav.classList.remove("nav-bar1");
-            console.log(nav.className)
+            // console.log(nav.className)
         }
         else{
-            console.log(nav.className)
+            // console.log(nav.className)
             nav.classList.add("nav-bar1");
             nav.classList.remove("nav-bar");
         }

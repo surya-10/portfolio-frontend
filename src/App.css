@@ -45,6 +45,8 @@
 }
 body{
   background: linear-gradient(to right, darkslateblue, rgb(127, 161, 184));
+  
+   /* background-color:darkseagreen; */
 }
 .nav-div{
   width: 100%;
@@ -347,18 +349,23 @@ ul li{
   gap: 70px;
 }
 .proj img{
-  width: 230px;
-  height: 155px;
-  border-radius: 10px;
+  width: 300px;
+  height: 220px;
+  /* border-radius: 10px; */
+  border-top-right-radius: 25px 20px;
+  border-bottom-left-radius: 20px 25px;
 }
 .project-name{
   cursor: pointer;
+  font-weight: 700;
+  color: black;
 }
 .tags small{
   padding: 3px;
   margin: 2px;
   border-radius: 8px;
   background-color: salmon;
+  text-align: left !important;
 }
 .tags{
   display: flex;
@@ -368,10 +375,10 @@ ul li{
   justify-content: center;
   align-items: center;
 }
-.proj{
+/* .proj{
   height: 370px;
-  width: 250px;
-}
+  width:300px;
+} */
 .my-projects{
   display: flex;
   justify-content: center;
@@ -387,7 +394,8 @@ ul li{
   font-size: 13px;
 }
 .pr{
-  border-radius: 15px;
+  border-top-left-radius: 25px 20px;
+  border-bottom-right-radius: 20px 25px;
 }
 .pr:hover{
   margin-top: -6px;
@@ -591,5 +599,18 @@ label{
 @media only screen and (max-width:768px){
   #hr1, #hr2{
     visibility: none;
+  }
+}
+.proj-des{
+  text-indent: 15px;
+  font-size: 15px;
+  color: gray;
+}
+@media only screen and (max-width:650px){
+  .error-msg{
+    text-align: center !important;
+    display: flex;
+    align-self: flex-start;
+    left: 33%;
   }
 }

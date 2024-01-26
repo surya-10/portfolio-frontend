@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import Base from "./base";
 import * as yup from "yup";
 import resume from "./icons/resume.pdf";
+import { useState } from "react";
 
 let contactMe = yup.object({
     name:yup.string().required("name is required"),
@@ -10,6 +11,7 @@ let contactMe = yup.object({
 })
 
 function About() {
+    let [mailBtn, setMailBtn] = useState("Send");
     let {values, handleChange, handleSubmit, handleBlur, touched, errors} = useFormik({
         initialValues:{
             name:"",
@@ -24,6 +26,7 @@ function About() {
     })
 
     async function sendMail(obj){
+        setMailBtn("Sending....")
         let result = await fetch("http://localhost:8000/get-data", {
             method:"POST",
             body:JSON.stringify(obj),
@@ -32,13 +35,12 @@ function About() {
             }
         })
         let out = await result.json();
-        if(out.response){
-            document.querySelector("#name").value = "";
-            document.querySelector("#email").value = "";
-            document.querySelector("#area").value = "";
-            alert("Thank you for your email !....")
-        }
+        setMailBtn("Send");
         console.log(out);
+        values.email="";
+        values.msg="";
+        values.name="";
+        setMailBtn("Send");
     }
     return (
         <div className="about-div">
@@ -77,7 +79,7 @@ function About() {
                             onChange={handleChange}
                             onBlur={handleBlur}/>
                         </div>
-                        {touched.name && errors.name ? <small className="small">name cannot be empty</small>:""}
+                        {touched.name && errors.name ? <p className="small error-msg">name cannot be empty</p>:""}
                         <div className="form-group d-flex flex-column justify-content-center align-items-center mt-3">
                             <label htmlFor="email" className="text-white">Email</label>
                             <input type="email" className="form-control" placeholder="enter your email" id="email"
@@ -86,7 +88,7 @@ function About() {
                             onChange={handleChange}
                             onBlur={handleBlur}/>
                         </div>
-                        {touched.email && errors.email ? <small className="small">name cannot be empty</small>:""}
+                        {touched.email && errors.email ? <small className="small error-msg text-center">name cannot be empty</small>:""}
                         <div className="form-group d-flex flex-column justify-content-center align-items-center mt-3">
                             <label htmlFor="area" className="text-white">Give feedback</label>
                             <textarea type="email" className="form-control" placeholder="leave a comment..." id="area"
@@ -95,11 +97,11 @@ function About() {
                             onChange={handleChange}
                             onBlur={handleBlur}/>
                         </div>
-                        {touched.msg && errors.msg ? <small className="small">name cannot be empty</small>:""}
+                        {touched.msg && errors.msg ? <small className="small error-msg">name cannot be empty</small>:""}
 
                     </div>
-                    <div className="d-flex justify-content-end">
-                    <button className="btn mt-4 bg-danger text-white p-2" type="submit">Send Mail</button>
+                    <div className="d-flex justify-content-end mt-3">
+                    <button className="btn mt-4 bg-danger text-white p-2" type="submit">{mailBtn}</button>
                     </div>
                     </form>
                     
