@@ -45,9 +45,8 @@
 }
 body{
   background: linear-gradient(to right, darkslateblue, rgb(127, 161, 184));
-  
-   /* background-color:darkseagreen; */
-}
+
+} 
 .nav-div{
   width: 100%;
   background-repeat: no-repeat;
@@ -137,6 +136,7 @@ body{
   color: yellow;
   display: inline-block;
   text-transform: uppercase;
+  font-size: 24px;
 }
 .user-title{
   font-size: 17px;
@@ -147,7 +147,7 @@ body{
 .iam{
   display: inline-block;
   margin-top: 20px;
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 0px;
   font-weight: 500;
   /* font-family: cursive; */
@@ -156,6 +156,7 @@ body{
 .about-btn{
   background-color: #E5BEEC !important;
   color: black !important;
+  margin-left: 17px;
   /* padding: 2px !important; */
 }
 .arrow{
@@ -166,7 +167,7 @@ body{
   width: 70%;
 }
 .about-me{
-  width: 90%;
+  width: 95%;
   margin: 0px auto;
   margin-bottom: 30px;
 }
@@ -241,6 +242,8 @@ body{
   }
   .ft-size{
     font-size: 16px !important;
+    text-align: center;
+    width: 100 !important;
   }
 }
 .overview{
@@ -616,4 +619,8 @@ label{
     align-self: flex-start;
     left: 33%;
   }
+}
+.cred{
+  color: black;
+  font-size: 15px;
 }

@@ -36,7 +36,7 @@ function Home() {
 
             <div className="main-content d-flex flex-column justify-content-center align-items-center mt-5">
                 <h4 className="mb-3  btn overview mt-3">Overview</h4>
-                <p className="text-white ft-size">Hi, I am a full stack web developer(MERN). I have good knowledge in both frontend and backend technologies. I am using <span className="little">REACT JS</span> for frontend, <span className="little">NODE JS</span> for server and <span className="little">MONGODB</span> for database. And I have good experience with <span className="text-warning api">REST API</span> endpoints. I have made lots of projects. I have added all my projects in projects section.   </p>
+                <p className="text-white ft-size ps-4">Hi, I am a full stack web developer(MERN). I have good knowledge in both frontend and backend technologies. I am using <span className="little">REACT JS</span> for frontend, <span className="little">NODE JS</span> for server and <span className="little">MONGODB</span> for database. And I have good experience with <span className="text-warning api">REST API</span> endpoints. I have made lots of projects. I have added all my projects in projects section.   </p>
             </div>
             <div className="about-me d-flex justify-content-end me-5 justify-content-md-start">
                 <button className="btn about-btn d-flex justify-content-center align-items-center" onClick={() => navigate("/about")}>More<i class="fa-solid fa-arrow-right arrow ms-2"></i></button>

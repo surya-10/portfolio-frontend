@@ -26,7 +26,7 @@ function Base({name, title, children}){
         <div className="container-fluid">
             <div className="child-div">
                 <div className="main-div">
-                    <div className="cont d-flex justify-content-between p-3 pb-4 align-items-center">
+                    <div className="cont d-flex justify-content-between pb-4 align-items-center">
                         {/* <p className="text-white title display-6">SURYA</p> */}
                         {/* <img src={mylogo} className="my-logo"/> */}
                         <p className="my-logo mt-4"><span>S</span><span>u</span><span>r</span>
