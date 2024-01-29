@@ -426,6 +426,7 @@ a:hover{
 }
 .abt{
   text-align: justify;
+  text-indent: 25px;
 }
 .contact{
   font-weight: 500;
@@ -623,4 +624,10 @@ label{
 .cred{
   color: black;
   font-size: 15px;
+}
+td, th{
+  color: white;
+}
+td{
+  padding-left: 5px;
 }

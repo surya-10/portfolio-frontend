@@ -51,8 +51,30 @@ function About() {
                     <hr id="hr1" /><hr id="hr2" />
                 </div>
                 <div className="about">
-                <p className="text-white mt-5 abt">Hi, I am <span className="little">Suryaprakash</span>. I am a full stack web developer(MERN). I have good knowledge in both frontend and backend technologies. I am using <span className="little">REACT JS</span> for frontend, <span className="little">NODE JS</span> for server and <span className="little">MONGODB</span> for database. And I have good experience with <span className="text-warning api">REST API</span> endpoints. I have made lots of projects. Currently i am doing full stack developer course. I have been working at Infosys for two years.
-                </p>
+                <p className="text-white mt-5 abt">Hi, I am <span className="little">Suryaprakash</span>. I am a full-stack web developer (MERN). I have good knowledge in both frontend and backend technologies. I am using <span className="little">React JS</span> for the frontend, <span className="little">Node JS</span> for the server, and <span className="little">MongoDB</span> for the database. I also have good experience with <span className="text-warning api">REST API</span> endpoints. I have completed four full-stack projects, and I have added those four projects on the projects page. Currently, I am enrolled in a full-stack developer course. I have been working at Infosys for 2.6 years.</p>
+                <div className="education mt-5">
+                    <p className="little">Education</p>
+                    <table>
+                        <tr>
+                            <th>Degree</th>
+                            <td>BE-ECE</td>
+                        </tr>
+                        <tr>
+                            <th>College</th>
+                            <td>Sona College of Technology</td>
+                        </tr>
+                        <tr>
+                            <th>Passed out year</th>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <th>Location</th>
+                            <td>Salem, Tamilnadu, India</td>
+                        </tr>
+                    </table>
+                    
+                    
+                </div>
                 <div className="profiles d-flex flex-column justify-content-center align-items-center mt-4">
                     <p className="text-white prof">Do checkout my profiles.</p>
                     <div>
