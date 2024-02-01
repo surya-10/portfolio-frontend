@@ -51,7 +51,14 @@ function About() {
                     <hr id="hr1" /><hr id="hr2" />
                 </div>
                 <div className="about">
-                <p className="text-white mt-5 abt">Hi, I am <span className="little">Suryaprakash</span>. I am a full-stack web developer (MERN). I have good knowledge in both frontend and backend technologies. I am using <span className="little">React JS</span> for the frontend, <span className="little">Node JS</span> for the server, and <span className="little">MongoDB</span> for the database. I also have good experience with <span className="text-warning api">REST API</span> endpoints. I have completed four full-stack projects, and I have added those four projects on the projects page. Currently, I am enrolled in a full-stack developer course. I have been working at Infosys for 2.6 years.</p>
+                {/* <p className="text-white mt-5 abt">Hi, I am <span className="little">Suryaprakash</span>. I am a full-stack web developer (MERN). I have good knowledge in both frontend and backend technologies. I am using <span className="little">React JS</span> for the frontend, <span className="little">Node JS</span> for the server, and <span className="little">MongoDB</span> for the database. I also have good experience with <span className="text-warning api">REST API</span> endpoints. I have completed four full-stack projects, and I have added those four projects on the projects page. Currently, I am enrolled in a full-stack developer course. I have been working at Infosys for 2.6 years.</p> */}
+                <p className="text-white mt-5 abt">
+  Hi, I am <span className="little">Suryaprakash</span>, a full-stack web developer specializing in the MERN stack. I have extensive knowledge of both frontend and backend technologies. For the frontend, I utilize <span className="little">React JS</span>, while for server-side development, I rely on <span className="little">Node JS</span>. The database aspect is handled with <span className="little">MongoDB</span>. 
+
+  I also possess considerable experience working with <span className="text-warning api">REST API</span> endpoints. Currently, I'm enrolled in a full-stack developer course to further enhance my skills.
+
+  Having completed four full-stack projects, I've showcased them on the projects page. My professional journey includes 2.7 years at <span className="little">Infosys</span>.
+</p>
                 <div className="education mt-5">
                     <p className="little">Education</p>
                     <table>
