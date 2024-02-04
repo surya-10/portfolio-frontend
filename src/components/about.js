@@ -20,14 +20,14 @@ function About() {
         },
         validationSchema:contactMe,
         onSubmit:(obj)=>{
-            console.log(obj)
+            
             sendMail(obj);
         }
     })
 
     async function sendMail(obj){
         setMailBtn("Sending....")
-        let result = await fetch("http://localhost:8000/get-data", {
+        let result = await fetch("https://portfolio-6yjn.onrender.com/get-data", {
             method:"POST",
             body:JSON.stringify(obj),
             headers:{
@@ -36,7 +36,7 @@ function About() {
         })
         let out = await result.json();
         setMailBtn("Send");
-        console.log(out);
+        
         values.email="";
         values.msg="";
         values.name="";
