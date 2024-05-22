@@ -9,6 +9,7 @@ import cali from "./icons/calci.png";
 import aiImage from "./icons/ai-image.png";
 import bike from "./icons/rental.webp";
 import crd from "./icons/crud.png";
+import imdb from "./icons/project-5.png";
 
 function Projects() {
     return (
@@ -142,18 +143,28 @@ function Projects() {
                                     <small>EXPRESS</small></div>
                             </div>
                     </div>
-                    {/* <div className="project-5 bg-white p-3 border pr">
-                    <div className="proj d-flex flex-column justify-content-evenly align-items-center">
-                        <img src={crud} className="mb-2 border"/>
-                        <div className="description d-flex flex-column justify-content-center align-items-center">
-                            <a href="https://final-full-stack.netlify.app/" target="_blank"><p className="project-name text-center"><i class="fa-solid fa-location-arrow me-2"></i>CRUD Application for Student and Mentor</p></a>
-                            <a href="https://github.com/surya-10/node-4.git" target="_blank"><p><i class="fa-brands fa-github me-2"></i>Frontend source code</p></a>
-                            <a href="https://github.com/surya-10/node-3.git" target="_blank"><p><i class="fa-brands fa-github me-2"></i>Backend source code</p></a>
-                            <div className="tags d-flex flex-wrap"><small>REACT</small><small>BOOTSTRAP</small><small>MONGODB</small><small>NODE</small>
-                            <small>EXPRESS</small></div>
+                    <div className="project-5 bg-white p-3 border pr d-flex flex-md-row flex-column">
+                        <div className="proj d-flex flex-column justify-content-evenly align-items-center">
+                            <img src={imdb} className="mb-2 border" />
+                            <div className="description d-flex flex-column justify-content-center align-items-center">
+                                <a href="https://friendly-puppy-0c0960.netlify.app/" target="_blank"> <p className="project-name text-center"><i class="fa-solid fa-location-arrow me-2"></i>IMDB Clone</p></a>
+                            </div>
+                        </div>
+                        <div className="d-flex flex-column flex-wrap ms-2 me-2">
+                            <p className="h4 p-2">IMDB clone</p>
+                            <p className="proj-des">Our IMDb Clone application, developed using the MERN stack, provides users with a platform to browse, review, and edit movie information. The app includes comprehensive details about movies, actors, and producers, emulating the functionality of the popular IMDb website.
+                            </p>
+                            <div className="d-flex flex-column">
+                                <ul>
+                                    <li><a href="https://github.com/surya-10/imdb-clone-frontend.git" target="_blank"><p><i class="fa-brands fa-github me-2"></i>Frontend source code</p></a></li>
+                                    <li><a href="https://github.com/surya-10/imdb-clone-backend.git" target="_blank"><p><i class="fa-brands fa-github me-2"></i>Backend Source code</p></a></li>
+                                </ul>
+                    
+                                <div className="tags d-flex flex-wrap"><small>REACT</small><small>BOOTSTRAP</small><small>MONGODB</small><small>NODE</small><small>EXPRESS</small></div>
+                            </div>
+
                         </div>
                     </div>
-                </div> */}
                     {/* <div className="project-5 bg-white p-3 border pr">
                     <div className="proj d-flex flex-column justify-content-evenly align-items-center">
                         <img src={dashboard} className="mb-2 border"/>
