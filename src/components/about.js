@@ -11,6 +11,20 @@ let contactMe = yup.object({
 })
 
 function About() {
+    let givenDate = new Date("2021-06-21");
+    let today = new Date();
+
+// Calculate the difference in years and months
+    let yearsDiff = today.getFullYear() - givenDate.getFullYear();
+    let monthsDiff = today.getMonth() - givenDate.getMonth();
+
+// Adjust for negative months difference
+    if (monthsDiff < 0) {
+        yearsDiff--;
+        monthsDiff += 12;
+    }
+
+
     let [mailBtn, setMailBtn] = useState("Send");
     let {values, handleChange, handleSubmit, handleBlur, touched, errors} = useFormik({
         initialValues:{
@@ -57,7 +71,7 @@ function About() {
 
   I also possess considerable experience working with <span className="text-warning api">REST API</span> endpoints. Currently, I'm enrolled in a full-stack developer course to further enhance my skills.
 
-  Having completed four full-stack projects, I've showcased them on the projects page. My professional journey includes 2.7 years at <span className="little">Infosys</span>.
+  Having completed four full-stack projects, I've showcased them on the projects page. My professional journey includes {yearsDiff} years and {monthsDiff} months at <span className="little">Infosys</span>.
 </p>
                 <div className="education mt-5">
                     <p className="little">Education</p>
